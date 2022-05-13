@@ -31,10 +31,10 @@ artifacts:
     paths:
       - ${SHORT_SHA}_test_log.xml
 substitutions:
-  _LOCATION: europe-southwest1
-  _PROJECT_ID: prj-sa-cegad-sandbox-atenea
-  _ARTIFACT_REGISTRY_REPO: cloud-run-images-test
-  _SERVICE_NAME: service-test-v1
+  _LOCATION: europe-southwest1 # Madrid
+  _PROJECT_ID: <PROJECT NAME>
+  _ARTIFACT_REGISTRY_REPO: <ARTIFACT REGISTRY REPO NAME>
+  _SERVICE_NAME: <SERVICE NAME>
 # Store images in Google Artifact Registry 
 images:
   - ${_LOCATION}-docker.pkg.dev/${_PROJECT_ID}/${_ARTIFACT_REGISTRY_REPO}/${_SERVICE_NAME}:${SHORT_SHA}
